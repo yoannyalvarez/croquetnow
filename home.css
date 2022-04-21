@@ -1,0 +1,85 @@
+@font-face {
+    font-family: sugarcandy;
+    src: url("fonts/sugar_candy_2/Sugar\ Candy.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+aside {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    box-shadow: 0 0 15px rgb(158, 158, 158);
+}
+
+.carousel {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 1.5em 2em 2em 2em;
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 2em 2em 2em; 
+}
+
+h3 {
+    font-family: sugarcandy, sans-serif;
+    color: white;
+    font-size: 300%;
+    background-color:rgba(46, 96, 130);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    padding: 0.5em;
+    padding-bottom: 1em;
+}
+
+h4 {
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+    font-size: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    border-bottom: 1px solid rgb(213, 213, 213);
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+li {
+    font-size: 90%;
+    margin: 0;
+    cursor: pointer;
+    display: grid;
+}
+
+li:hover {
+    border-right: 8px solid gray;
+    background-color: rgb(236, 236, 236);
+}
+
+i {
+    position: relative;
+    top: 6px;
+    margin-right: 20px;
+    color: gray;
+}
+
+a, a:hover, a:active a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 1em 0;
+    padding-left: 22px;
+}

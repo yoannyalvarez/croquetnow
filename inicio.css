@@ -1,0 +1,182 @@
+@font-face {
+    font-family: sugarcandy;
+    src: url("fonts/sugar_candy_2/Sugar\ Candy.otf");
+}
+
+body {
+    background-color:rgba(46, 96, 130);
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    align-content: center;
+}
+
+.iniciar-sesion {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    visibility: hidden;
+    margin-top: 10em;
+}
+
+.appear {
+    visibility: visible;
+}
+
+h1 {
+    font-family: sugarcandy, sans-serif;
+    font-size: 350%;
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    z-index: 1;
+    background-color:rgba(46, 96, 130);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all 1s linear;
+}
+
+.welcome {
+    width: 350px;
+    top: 0%;
+    height: 100px;
+    border-radius: 100%;
+    transition: all 1s linear;
+}
+
+h2 {
+    color: rgb(76, 76, 76);
+}
+
+form {
+    padding: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    place-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 5px;
+}
+ img {
+    width: 100%;
+    height: 490px;
+}
+
+.btn {
+    width: 100%;
+    color: white;
+    border: 0px;
+    padding: 0.9em;
+    border-radius: 2px;
+    font-size: 65%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.facebook {
+    background-color: #4267B2;
+    font-weight: bold;
+}
+
+.facebook:hover {
+    background-color: #35518a;
+}
+
+.google {
+    background-color: #db4a39;
+    font-weight: bold;
+}
+
+.google:hover {
+    background-color: #a73a2e;
+}
+
+.ingresar, .registrarse {
+    background-color: rgba(46, 96, 130);
+}
+
+.ingresar:hover, .registrarse:hover {
+    background-color: rgb(36, 75, 100);
+}
+
+input {
+    padding: 0.5em;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 2px;
+}
+
+p {
+    font-size: 80%;
+    font-weight: bold;
+    color: rgb(76, 76, 76);
+    margin: 0;
+}
+
+.p1 {
+    margin-bottom: 2em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.forgot-password {
+    display: none;
+    transition: 1s linear;
+}
+
+.forgot-wrapper {
+    background-color: white;
+    border-radius: 2px;
+}
+
+.forgot-input {
+    width: 100%;
+}
+
+.recuperar, .cancelar {
+    width: 25%;
+    font-weight: bold; 
+    transition: background-color 0.2s linear;
+}
+
+.recuperar {
+    background-color: rgba(46, 96, 130);
+}
+
+.cancelar  {
+    margin-top: 2em;
+    background-color: lightgray;
+}
+
+.recuperar:hover {
+    background-color: rgb(36, 75, 100);
+}
+
+.cancelar:hover {
+    background-color: gray;
+}
+
+.show-forgot-password {
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    z-index: 2;
+}

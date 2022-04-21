@@ -1,0 +1,273 @@
+@font-face {
+    font-family: sugarcandy;
+    src: url("fonts/sugar_candy_2/Sugar\ Candy.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 500px 350px;
+}
+
+aside {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    box-shadow: 0 0 15px rgb(158, 158, 158);
+}
+
+.head {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0em 1em 0 1em;
+}
+
+aside h3 {
+    font-family: sugarcandy, sans-serif;
+    color: white;
+    font-size: 300%;
+    background-color:rgba(46, 96, 130);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    padding: 0.5em;
+    padding-bottom: 1em;
+}
+
+aside h4 {
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
+    font-size: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    border-bottom: 1px solid rgb(213, 213, 213);
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+aside li {
+    font-size: 90%;
+    margin: 0;
+    cursor: pointer;
+    display: grid;
+}
+
+aside li:hover {
+    border-right: 8px solid gray;
+    background-color: rgb(236, 236, 236);
+}
+
+aside i {
+    position: relative;
+    top: 6px;
+    margin-right: 20px;
+    color: gray;
+}
+
+aside a, aside a:hover, aside a:active, aside a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 1em 0;
+    padding-left: 22px;
+}
+
+.head {
+    background-image: url(media/img/img4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+}
+
+.image {
+    border-radius: 100%;
+    width: 13em;
+    height: 13em;
+    border: 0.5em solid white;
+    background-color: white;
+
+}
+
+.image img {
+    width: 12em;
+    height: 12em;
+    border-radius: 100%;
+}
+
+.image a {
+    background-color: white;
+    border-radius: 100%;
+    padding: .5em;
+    vertical-align: middle;
+    color: gray;
+    position: relative;
+    bottom: 105%;
+    left: 75%;
+}
+
+.image i {
+    position: relative;
+    top: 6px;
+    transition: all 0.2s linear
+}
+
+.head h2, .head h3 {
+    color: black;
+    text-align: center;
+}
+
+h3 {
+  font-size: 80%;  
+}
+
+/*lista*/
+.info-list li {
+    border: 0px;
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 1em 10em 0 10em;
+}
+
+.subheading {
+    text-align: left;
+    font-size: 150%;
+    margin-bottom: 1em;
+}
+
+.info-list {
+    border: 1px solid rgb(208, 207, 207);
+}
+
+.info-list li {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 2fr 2fr 0.1fr 1fr;
+    padding: 1em;
+}
+
+.info-list h4, .info-list input {
+    margin: 0;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+.info-list input {
+    font-size: 90%;
+    border: 0px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.info-list i {
+    font-size: 100%;
+    transition: all 0.2s linear
+}
+
+.info-list i:hover, .image i:hover {
+    cursor: pointer;
+    color: rgb(77, 120, 249);
+}
+
+.btn {
+    width: 100%;
+    color: white;
+    border: 0px;
+    padding: 0.5em;
+    border-radius: 4px;
+    font-size: 50%;
+    text-transform: uppercase;
+    cursor: pointer;
+    visibility: hidden;
+    background-color: rgb(77, 120, 249);
+}
+
+.show-btn {
+    visibility: visible;
+}
+
+input:enabled {
+    border: 2px solid black;
+}
+
+/*forgot password*/
+.forgot-password {
+    display: none;
+}
+
+.forgot-wrapper {
+    background-color: white;
+    border-radius: 2px;
+    padding: 3em 5em 2em 5em;
+    text-align: center;
+}
+
+.forgot-input {
+    width: 100%;
+}   
+
+.recuperar, .cancelar {
+    width: 25%;
+    margin: 0 auto;
+    transition: background-color 0.2s linear;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    border-radius: 2px;
+    font-size: 80%;
+    visibility: visible;
+}
+
+.recuperar {
+    background-color: rgba(46, 96, 130);
+    margin-top: 0.5em;
+}
+
+.cancelar  {
+    margin-top: 2em;
+    background-color: lightgray;
+}
+
+.recuperar:hover {
+    background-color: rgb(36, 75, 100);
+}
+
+.cancelar:hover {
+    background-color: gray;
+}
+
+.show-forgot-password {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.forgot-form h2, .forgot-form p {
+    font-weight: bold;
+}
+
+.forgot-form h2 {
+    font-size: 130%;
+    margin-bottom: 1em;
+}
+
+.forgot-form p {
+    font-size: 90%;
+    margin: 0.5em;
+}
+
